@@ -7,6 +7,7 @@
 //
 
 #import "OMAppDelegate.h"
+#import "OMCommandControl.h"
 
 @implementation OMAppDelegate
 
@@ -21,8 +22,35 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    UIViewController *viewController = [[UIViewController alloc] init];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"cool" forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(0, 100, 100, 100)];
+    [viewController.view addSubview:button];
+    
+    [button addTarget:self action:@selector(Push) forControlEvents:UIControlEventTouchUpInside];
+    
+    _navigation = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    
+    
+    [self.window setRootViewController:_navigation];
+    
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"%@", [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"File" ofType:@"strings"]]);
+    
+    
+    
     return YES;
+}
+
+- (void)Push{
+//    UIViewController *aviewcontroller = [[UIViewController alloc] init];
+    [[OMCommandControl shareControl] doCommandType:OMCommandControlTools
+                                         Commandid:OMToolCommandPlay
+                                             Param:[OMCommandHelper getCommandParam_Tool_Play:@"mySong"]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

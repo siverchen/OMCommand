@@ -16,6 +16,12 @@
 		BCE8D88816E9925A000F0305 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE8D88716E9925A000F0305 /* Default.png */; };
 		BCE8D88A16E9925A000F0305 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE8D88916E9925A000F0305 /* Default@2x.png */; };
 		BCE8D88C16E9925A000F0305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE8D88B16E9925A000F0305 /* Default-568h@2x.png */; };
+		BCE8D89416E992BF000F0305 /* OMCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D89316E992BF000F0305 /* OMCommand.m */; };
+		BCE8D89716E992CB000F0305 /* OMViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D89616E992CB000F0305 /* OMViewCommand.m */; };
+		BCE8D89A16E9960D000F0305 /* OMCommandControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D89916E9960D000F0305 /* OMCommandControl.m */; };
+		BCE8D89D16E9B53C000F0305 /* OMToolCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D89C16E9B53C000F0305 /* OMToolCommand.m */; };
+		BCE8D8A016E9B86D000F0305 /* OMCommandHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D89F16E9B86D000F0305 /* OMCommandHelper.m */; };
+		BCE8D8A716E9D557000F0305 /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCE8D8A616E9D557000F0305 /* File.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,17 @@
 		BCE8D88716E9925A000F0305 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BCE8D88916E9925A000F0305 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BCE8D88B16E9925A000F0305 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BCE8D89216E992BF000F0305 /* OMCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCommand.h; sourceTree = "<group>"; };
+		BCE8D89316E992BF000F0305 /* OMCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCommand.m; sourceTree = "<group>"; };
+		BCE8D89516E992CB000F0305 /* OMViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMViewCommand.h; sourceTree = "<group>"; };
+		BCE8D89616E992CB000F0305 /* OMViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMViewCommand.m; sourceTree = "<group>"; };
+		BCE8D89816E9960D000F0305 /* OMCommandControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCommandControl.h; sourceTree = "<group>"; };
+		BCE8D89916E9960D000F0305 /* OMCommandControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCommandControl.m; sourceTree = "<group>"; };
+		BCE8D89B16E9B53C000F0305 /* OMToolCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMToolCommand.h; sourceTree = "<group>"; };
+		BCE8D89C16E9B53C000F0305 /* OMToolCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMToolCommand.m; sourceTree = "<group>"; };
+		BCE8D89E16E9B86D000F0305 /* OMCommandHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCommandHelper.h; sourceTree = "<group>"; };
+		BCE8D89F16E9B86D000F0305 /* OMCommandHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCommandHelper.m; sourceTree = "<group>"; };
+		BCE8D8A616E9D557000F0305 /* File.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 		BCE8D86916E99258000F0305 = {
 			isa = PBXGroup;
 			children = (
+				BCE8D8A616E9D557000F0305 /* File.strings */,
 				BCE8D87B16E99259000F0305 /* OMCommand */,
 				BCE8D87416E99259000F0305 /* Frameworks */,
 				BCE8D87316E99259000F0305 /* Products */,
@@ -81,6 +99,14 @@
 				BCE8D88416E99259000F0305 /* OMAppDelegate.h */,
 				BCE8D88516E99259000F0305 /* OMAppDelegate.m */,
 				BCE8D87C16E99259000F0305 /* Supporting Files */,
+				BCE8D89216E992BF000F0305 /* OMCommand.h */,
+				BCE8D89316E992BF000F0305 /* OMCommand.m */,
+				BCE8D89516E992CB000F0305 /* OMViewCommand.h */,
+				BCE8D89616E992CB000F0305 /* OMViewCommand.m */,
+				BCE8D89816E9960D000F0305 /* OMCommandControl.h */,
+				BCE8D89916E9960D000F0305 /* OMCommandControl.m */,
+				BCE8D89B16E9B53C000F0305 /* OMToolCommand.h */,
+				BCE8D89C16E9B53C000F0305 /* OMToolCommand.m */,
 			);
 			path = OMCommand;
 			sourceTree = "<group>";
@@ -95,6 +121,8 @@
 				BCE8D88716E9925A000F0305 /* Default.png */,
 				BCE8D88916E9925A000F0305 /* Default@2x.png */,
 				BCE8D88B16E9925A000F0305 /* Default-568h@2x.png */,
+				BCE8D89E16E9B86D000F0305 /* OMCommandHelper.h */,
+				BCE8D89F16E9B86D000F0305 /* OMCommandHelper.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +183,7 @@
 				BCE8D88816E9925A000F0305 /* Default.png in Resources */,
 				BCE8D88A16E9925A000F0305 /* Default@2x.png in Resources */,
 				BCE8D88C16E9925A000F0305 /* Default-568h@2x.png in Resources */,
+				BCE8D8A716E9D557000F0305 /* File.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +196,11 @@
 			files = (
 				BCE8D88216E99259000F0305 /* main.m in Sources */,
 				BCE8D88616E99259000F0305 /* OMAppDelegate.m in Sources */,
+				BCE8D89416E992BF000F0305 /* OMCommand.m in Sources */,
+				BCE8D89716E992CB000F0305 /* OMViewCommand.m in Sources */,
+				BCE8D89A16E9960D000F0305 /* OMCommandControl.m in Sources */,
+				BCE8D89D16E9B53C000F0305 /* OMToolCommand.m in Sources */,
+				BCE8D8A016E9B86D000F0305 /* OMCommandHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OMCommand/OMCommand-Prefix.pch";
 				INFOPLIST_FILE = "OMCommand/OMCommand-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -255,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OMCommand/OMCommand-Prefix.pch";
 				INFOPLIST_FILE = "OMCommand/OMCommand-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,6 +315,7 @@
 				BCE8D89116E9925A000F0305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

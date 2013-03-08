@@ -11,4 +11,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "OMViewCommand.h"
+    #import "OMToolCommand.h"
+    #import "OMCommandHelper.h"
 #endif
